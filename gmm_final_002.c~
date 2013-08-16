@@ -1,5 +1,3 @@
-/* This is first commit :) */
-
 #include <stdio.h>
 #include <math.h>
 #include <gsl/gsl_errno.h>
