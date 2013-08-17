@@ -8,10 +8,13 @@ rm gmm_final.exe
 #
 #gcc gmm_final_001.c -Wall -ansi -pedantic -lgsl -lgslcblas -lm -o gmm_final.exe
 #
-gcc gmm_final_002.c -Wall -ansi -pedantic -lgsl -lgslcblas -lm -o gmm_final.exe
+echo 'compiling...'
+g++ gmm_final_002.c -Wall -ansi -pedantic -lgsl -lgslcblas -o gmm_final.exe
+echo 'done, running soft:'
 #./gmm_final.exe # > data_gmm_2_s_b_r_kappa_0_0_s_1026_tf_800_H_A.dat 
 # run the soft and save to file:
-./gmm_final.exe
+nohup ./gmm_final.exe &
+echo 'done, you can log off'
 #  
 #  data_gmm_3_s_a_r_kappa_0_0_s_1026_H_A.dat #(H_A odpowiednik pliku data_gmm_3_s_a_r_kappa_0_0_s_1026.dat)
 #  data_gmm_2_s_a_r_kappa_0_0_s_1026_H_A.dat #(H_A odpowiednik pliku data_gmm_2_s_a_r_kappa_0_0_s_1026.dat)
